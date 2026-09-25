@@ -108,7 +108,7 @@ export default function Home() {
         </h1>
 
         <div className={styles.socials}>
-          <a href="#instagram">Instagram</a>
+          <a href="https://www.instagram.com/hrtlss.tattss/">Instagram</a>
           <a href={contact.phoneHref}>{contact.phone}</a>
         </div>
 

@@ -36,10 +36,11 @@ export default function Navbar() {
   useEffect(() => setMounted(true), []);
 
   useGSAP(() => {
-    if (!mounted || !sheetRef.current || !sheetLinksRef.current) return;
+    if (!mounted || !menuOpen || !sheetRef.current || !sheetLinksRef.current) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const sheet = sheetRef.current;
     const items = [sheetHeaderRef.current, ...sheetLinksRef.current.querySelectorAll("p, a"), sheetFooterRef.current].filter(Boolean);
-    const timeline = gsap.timeline({ paused: true, onReverseComplete: () => {
+    const timeline = gsap.timeline({ onReverseComplete: () => {
       setMenuOpen(false);
       toggleRef.current?.focus();
     } });
@@ -49,13 +50,8 @@ export default function Navbar() {
     sheetTimelineRef.current = timeline;
     return () => {
       sheetTimelineRef.current = null;
-      timeline.kill();
     };
-  }, { dependencies: [mounted], scope: sheetRef });
-
-  useEffect(() => {
-    if (menuOpen) sheetTimelineRef.current?.play();
-  }, [menuOpen]);
+  }, { dependencies: [mounted, menuOpen], scope: sheetRef, revertOnUpdate: true });
 
   useGSAP(() => {
     const media = gsap.matchMedia();
@@ -149,15 +145,15 @@ export default function Navbar() {
 
   function closeMenu() {
     if (!menuOpen) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !sheetTimelineRef.current) {
+    if (!sheetTimelineRef.current || sheetTimelineRef.current.progress() === 0) {
       setMenuOpen(false);
+      toggleRef.current?.focus();
       return;
     }
     sheetTimelineRef.current.reverse();
   }
 
   function openMenu() {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) sheetTimelineRef.current?.progress(1).pause();
     setMenuOpen(true);
   }
 
