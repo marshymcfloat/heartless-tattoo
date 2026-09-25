@@ -1,0 +1,490 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "Heartless Tattoo home" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+      - button "Open navigation" [ref=e590] [cursor=pointer]
+    - region "Heartless Tattoo" [ref=e21]:
+      - heading "Heartless Tattoo" [level=1] [ref=e22]
+      - paragraph [ref=e26]: Every line I create carries a piece of who I am. Tattooing is not what I do for a living—it's what I live for.
+      - generic "Heartless Tattoo" [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: HEARTLESS TATTOO —
+          - generic [ref=e30]: HEARTLESS TATTOO —
+      - generic:
+        - img "Tattoo portrait showcasing blackwork arm artwork"
+      - paragraph [ref=e31]: Based in East York, Ontario
+    - generic [ref=e42]:
+      - region "Selected work. (20)" [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - paragraph [ref=e46]: 01 / The portfolio
+            - heading "Selected work. (20)" [level=2] [ref=e47]:
+              - text: Selected work.
+              - superscript [ref=e48]: (20)
+          - paragraph [ref=e49]: Different stories. The same attention to every line.
+        - generic [ref=e50]:
+          - group "Selected tattoo work, images 1 to 10, horizontally scrollable gallery" [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - figure "01 Gallery 01 / 20" [ref=e54]:
+                  - button "View Gallery 01" [ref=e55] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e56]
+                    - img [ref=e58]
+                  - generic [ref=e60]:
+                    - generic [ref=e61]: "01"
+                    - generic [ref=e62]: Gallery 01
+                    - generic [ref=e63]: / 20
+                - figure "02 Gallery 02 / 20" [ref=e64]:
+                  - button "View Gallery 02" [ref=e65] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e66]
+                    - img [ref=e68]
+                  - generic [ref=e70]:
+                    - generic [ref=e71]: "02"
+                    - generic [ref=e72]: Gallery 02
+                    - generic [ref=e73]: / 20
+                - figure "03 Gallery 03 / 20" [ref=e74]:
+                  - button "View Gallery 03" [ref=e75] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e76]
+                    - img [ref=e78]
+                  - generic [ref=e80]:
+                    - generic [ref=e81]: "03"
+                    - generic [ref=e82]: Gallery 03
+                    - generic [ref=e83]: / 20
+                - figure "04 Gallery 04 / 20" [ref=e84]:
+                  - button "View Gallery 04" [ref=e85] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e86]
+                    - img [ref=e88]
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: "04"
+                    - generic [ref=e92]: Gallery 04
+                    - generic [ref=e93]: / 20
+                - figure "05 Gallery 05 / 20" [ref=e94]:
+                  - button "View Gallery 05" [ref=e95] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e96]
+                    - img [ref=e98]
+                  - generic [ref=e100]:
+                    - generic [ref=e101]: "05"
+                    - generic [ref=e102]: Gallery 05
+                    - generic [ref=e103]: / 20
+                - figure "06 Gallery 06 / 20" [ref=e104]:
+                  - button "View Gallery 06" [ref=e105] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e106]
+                    - img [ref=e108]
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: "06"
+                    - generic [ref=e112]: Gallery 06
+                    - generic [ref=e113]: / 20
+                - figure "07 Gallery 07 / 20" [ref=e114]:
+                  - button "View Gallery 07" [ref=e115] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e116]
+                    - img [ref=e118]
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: "07"
+                    - generic [ref=e122]: Gallery 07
+                    - generic [ref=e123]: / 20
+                - figure "08 Gallery 08 / 20" [ref=e124]:
+                  - button "View Gallery 08" [ref=e125] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e126]
+                    - img [ref=e128]
+                  - generic [ref=e130]:
+                    - generic [ref=e131]: "08"
+                    - generic [ref=e132]: Gallery 08
+                    - generic [ref=e133]: / 20
+                - figure "09 Gallery 09 / 20" [ref=e134]:
+                  - button "View Gallery 09" [ref=e135] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e136]
+                    - img [ref=e138]
+                  - generic [ref=e140]:
+                    - generic [ref=e141]: "09"
+                    - generic [ref=e142]: Gallery 09
+                    - generic [ref=e143]: / 20
+                - figure "10 Gallery 10 / 20" [ref=e144]:
+                  - button "View Gallery 10" [ref=e145] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e146]
+                    - img [ref=e148]
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: "10"
+                    - generic [ref=e152]: Gallery 10
+                    - generic [ref=e153]: / 20
+              - generic [ref=e154]:
+                - figure [ref=e155]:
+                  - button [ref=e156] [cursor=pointer]:
+                    - img [ref=e158]
+                  - generic [ref=e160]:
+                    - generic [ref=e161]: "01"
+                    - generic [ref=e162]: Gallery 01
+                    - generic [ref=e163]: / 20
+                - figure [ref=e164]:
+                  - button [ref=e165] [cursor=pointer]:
+                    - img [ref=e167]
+                  - generic [ref=e169]:
+                    - generic [ref=e170]: "02"
+                    - generic [ref=e171]: Gallery 02
+                    - generic [ref=e172]: / 20
+                - figure [ref=e173]:
+                  - button [ref=e174] [cursor=pointer]:
+                    - img [ref=e176]
+                  - generic [ref=e178]:
+                    - generic [ref=e179]: "03"
+                    - generic [ref=e180]: Gallery 03
+                    - generic [ref=e181]: / 20
+                - figure [ref=e182]:
+                  - button [ref=e183] [cursor=pointer]:
+                    - img [ref=e185]
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: "04"
+                    - generic [ref=e189]: Gallery 04
+                    - generic [ref=e190]: / 20
+                - figure [ref=e191]:
+                  - button [ref=e192] [cursor=pointer]:
+                    - img [ref=e194]
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: "05"
+                    - generic [ref=e198]: Gallery 05
+                    - generic [ref=e199]: / 20
+                - figure [ref=e200]:
+                  - button [ref=e201] [cursor=pointer]:
+                    - img [ref=e203]
+                  - generic [ref=e205]:
+                    - generic [ref=e206]: "06"
+                    - generic [ref=e207]: Gallery 06
+                    - generic [ref=e208]: / 20
+                - figure [ref=e209]:
+                  - button [ref=e210] [cursor=pointer]:
+                    - img [ref=e212]
+                  - generic [ref=e214]:
+                    - generic [ref=e215]: "07"
+                    - generic [ref=e216]: Gallery 07
+                    - generic [ref=e217]: / 20
+                - figure [ref=e218]:
+                  - button [ref=e219] [cursor=pointer]:
+                    - img [ref=e221]
+                  - generic [ref=e223]:
+                    - generic [ref=e224]: "08"
+                    - generic [ref=e225]: Gallery 08
+                    - generic [ref=e226]: / 20
+                - figure [ref=e227]:
+                  - button [ref=e228] [cursor=pointer]:
+                    - img [ref=e230]
+                  - generic [ref=e232]:
+                    - generic [ref=e233]: "09"
+                    - generic [ref=e234]: Gallery 09
+                    - generic [ref=e235]: / 20
+                - figure [ref=e236]:
+                  - button [ref=e237] [cursor=pointer]:
+                    - img [ref=e239]
+                  - generic [ref=e241]:
+                    - generic [ref=e242]: "10"
+                    - generic [ref=e243]: Gallery 10
+                    - generic [ref=e244]: / 20
+          - group "Selected tattoo work, images 11 to 20, horizontally scrollable gallery" [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e247]:
+                - figure "11 Gallery 11 / 20" [ref=e248]:
+                  - button "View Gallery 11" [ref=e249] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e250]
+                    - img [ref=e252]
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: "11"
+                    - generic [ref=e256]: Gallery 11
+                    - generic [ref=e257]: / 20
+                - figure "12 Gallery 12 / 20" [ref=e258]:
+                  - button "View Gallery 12" [ref=e259] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e260]
+                    - img [ref=e262]
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: "12"
+                    - generic [ref=e266]: Gallery 12
+                    - generic [ref=e267]: / 20
+                - figure "13 Gallery 13 / 20" [ref=e268]:
+                  - button "View Gallery 13" [ref=e269] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e270]
+                    - img [ref=e272]
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: "13"
+                    - generic [ref=e276]: Gallery 13
+                    - generic [ref=e277]: / 20
+                - figure "14 Gallery 14 / 20" [ref=e278]:
+                  - button "View Gallery 14" [ref=e279] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e280]
+                    - img [ref=e282]
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: "14"
+                    - generic [ref=e286]: Gallery 14
+                    - generic [ref=e287]: / 20
+                - figure "15 Gallery 15 / 20" [ref=e288]:
+                  - button "View Gallery 15" [ref=e289] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e290]
+                    - img [ref=e292]
+                  - generic [ref=e294]:
+                    - generic [ref=e295]: "15"
+                    - generic [ref=e296]: Gallery 15
+                    - generic [ref=e297]: / 20
+                - figure "16 Gallery 16 / 20" [ref=e298]:
+                  - button "View Gallery 16" [ref=e299] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e300]
+                    - img [ref=e302]
+                  - generic [ref=e304]:
+                    - generic [ref=e305]: "16"
+                    - generic [ref=e306]: Gallery 16
+                    - generic [ref=e307]: / 20
+                - figure "17 Gallery 17 / 20" [ref=e308]:
+                  - button "View Gallery 17" [ref=e309] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e310]
+                    - img [ref=e312]
+                  - generic [ref=e314]:
+                    - generic [ref=e315]: "17"
+                    - generic [ref=e316]: Gallery 17
+                    - generic [ref=e317]: / 20
+                - figure "18 Gallery 18 / 20" [ref=e318]:
+                  - button "View Gallery 18" [ref=e319] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e320]
+                    - img [ref=e322]
+                  - generic [ref=e324]:
+                    - generic [ref=e325]: "18"
+                    - generic [ref=e326]: Gallery 18
+                    - generic [ref=e327]: / 20
+                - figure "19 Gallery 19 / 20" [ref=e328]:
+                  - button "View Gallery 19" [ref=e329] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e330]
+                    - img [ref=e332]
+                  - generic [ref=e334]:
+                    - generic [ref=e335]: "19"
+                    - generic [ref=e336]: Gallery 19
+                    - generic [ref=e337]: / 20
+                - figure "20 Gallery 20 / 20" [ref=e338]:
+                  - button "View Gallery 20" [ref=e339] [cursor=pointer]:
+                    - img "Tattoo artwork from the Heartless Tattoo gallery" [ref=e340]
+                    - img [ref=e342]
+                  - generic [ref=e344]:
+                    - generic [ref=e345]: "20"
+                    - generic [ref=e346]: Gallery 20
+                    - generic [ref=e347]: / 20
+              - generic [ref=e348]:
+                - figure [ref=e349]:
+                  - button [ref=e350] [cursor=pointer]:
+                    - img [ref=e352]
+                  - generic [ref=e354]:
+                    - generic [ref=e355]: "11"
+                    - generic [ref=e356]: Gallery 11
+                    - generic [ref=e357]: / 20
+                - figure [ref=e358]:
+                  - button [ref=e359] [cursor=pointer]:
+                    - img [ref=e361]
+                  - generic [ref=e363]:
+                    - generic [ref=e364]: "12"
+                    - generic [ref=e365]: Gallery 12
+                    - generic [ref=e366]: / 20
+                - figure [ref=e367]:
+                  - button [ref=e368] [cursor=pointer]:
+                    - img [ref=e370]
+                  - generic [ref=e372]:
+                    - generic [ref=e373]: "13"
+                    - generic [ref=e374]: Gallery 13
+                    - generic [ref=e375]: / 20
+                - figure [ref=e376]:
+                  - button [ref=e377] [cursor=pointer]:
+                    - img [ref=e379]
+                  - generic [ref=e381]:
+                    - generic [ref=e382]: "14"
+                    - generic [ref=e383]: Gallery 14
+                    - generic [ref=e384]: / 20
+                - figure [ref=e385]:
+                  - button [ref=e386] [cursor=pointer]:
+                    - img [ref=e388]
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: "15"
+                    - generic [ref=e392]: Gallery 15
+                    - generic [ref=e393]: / 20
+                - figure [ref=e394]:
+                  - button [ref=e395] [cursor=pointer]:
+                    - img [ref=e397]
+                  - generic [ref=e399]:
+                    - generic [ref=e400]: "16"
+                    - generic [ref=e401]: Gallery 16
+                    - generic [ref=e402]: / 20
+                - figure [ref=e403]:
+                  - button [ref=e404] [cursor=pointer]:
+                    - img [ref=e406]
+                  - generic [ref=e408]:
+                    - generic [ref=e409]: "17"
+                    - generic [ref=e410]: Gallery 17
+                    - generic [ref=e411]: / 20
+                - figure [ref=e412]:
+                  - button [ref=e413] [cursor=pointer]:
+                    - img [ref=e415]
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: "18"
+                    - generic [ref=e419]: Gallery 18
+                    - generic [ref=e420]: / 20
+                - figure [ref=e421]:
+                  - button [ref=e422] [cursor=pointer]:
+                    - img [ref=e424]
+                  - generic [ref=e426]:
+                    - generic [ref=e427]: "19"
+                    - generic [ref=e428]: Gallery 19
+                    - generic [ref=e429]: / 20
+                - figure [ref=e430]:
+                  - button [ref=e431] [cursor=pointer]:
+                    - img [ref=e433]
+                  - generic [ref=e435]:
+                    - generic [ref=e436]: "20"
+                    - generic [ref=e437]: Gallery 20
+                    - generic [ref=e438]: / 20
+        - generic [ref=e440]: Scroll to explore / Click to enlarge
+        - group "Styles & services" [ref=e441]:
+          - generic [ref=e442]:
+            - heading "Styles & services" [level=3] [ref=e443]
+            - paragraph [ref=e444]: Your idea. Your way of wearing it.
+          - generic [ref=e445]:
+            - figure "Blackwork Studio selection" [ref=e446]:
+              - generic [ref=e447]:
+                - generic:
+                  - img "Tattoo artwork from the Heartless Tattoo gallery"
+                - generic:
+                  - img
+                - generic:
+                  - img
+                - generic:
+                  - img
+                - generic:
+                  - img
+                - generic [ref=e448]: 01 / 05
+              - generic [ref=e449]:
+                - generic [ref=e450]: Blackwork
+                - generic [ref=e451]: Studio selection
+            - generic [ref=e452]:
+              - paragraph [ref=e453]: Tap to explore
+              - list [ref=e454]:
+                - listitem [ref=e455]:
+                  - button "Blackwork" [pressed] [ref=e456] [cursor=pointer]:
+                    - generic [ref=e458]: Blackwork
+                - listitem [ref=e461]:
+                  - button "Realism" [ref=e462] [cursor=pointer]:
+                    - generic [ref=e464]: Realism
+                - listitem [ref=e467]:
+                  - button "B&G Portrait" [ref=e468] [cursor=pointer]:
+                    - generic [ref=e470]: B&G Portrait
+                - listitem [ref=e473]:
+                  - button "Minimal" [ref=e474] [cursor=pointer]:
+                    - generic [ref=e476]: Minimal
+                - listitem [ref=e479]:
+                  - button "Custom tattoos" [ref=e480] [cursor=pointer]:
+                    - generic [ref=e482]: Custom tattoos
+      - region "Every mark carries a story." [ref=e485]:
+        - generic [ref=e487]: 03 / The artist
+        - generic [ref=e489]:
+          - generic [ref=e490]:
+            - paragraph [ref=e491]: Behind the work
+            - heading "Every mark carries a story." [level=2] [ref=e492]:
+              - text: Every mark
+              - text: carries a story.
+            - generic [ref=e493]:
+              - paragraph [ref=e494]: Joefrey Zabalo is a tattoo artist from Puerto Princesa City, Palawan, Philippines. Today, he lives with his wife in East York, Ontario, where she works.
+              - paragraph [ref=e495]: Home is part of what he carries into his craft. Every piece begins with listening, then becomes something considered and personal — made to mean more with time, not less.
+            - paragraph [ref=e496]: Joefrey Zabalo / Tattoo artist
+          - figure "Joefrey Zabalo The artist" [ref=e497]:
+            - img "Black-and-white portrait of tattoo artist Joefrey Zabalo" [ref=e499]
+            - generic [ref=e500]:
+              - generic [ref=e501]: Joefrey Zabalo
+              - generic [ref=e502]: The artist
+        - generic "From Puerto Princesa City, Palawan, to East York, Ontario" [ref=e503]:
+          - generic [ref=e504]:
+            - generic [ref=e505]: Where it began / PH
+            - strong [ref=e506]:
+              - text: Puerto Princesa City
+              - generic [ref=e507]: Palawan, Philippines
+          - generic [ref=e509]:
+            - generic [ref=e510]: Where he is now / CA
+            - strong [ref=e511]:
+              - text: East York
+              - generic [ref=e512]: Ontario, Canada
+      - region "Your idea. Let's make it permanent." [ref=e513]:
+        - generic [ref=e515]: 04 / Your next piece
+        - generic [ref=e517]:
+          - generic [ref=e518]:
+            - heading "Your idea. Let's make it permanent." [level=2] [ref=e519]:
+              - text: Your idea.
+              - generic [ref=e520]:
+                - text: Let's make
+                - text: it permanent.
+            - paragraph [ref=e521]: Something small. Something meaningful. Something entirely yours. Tell me what you have in mind, and we'll take it from there.
+            - generic [ref=e522]:
+              - generic [ref=e523]: Prefer to reach out directly?
+              - link "jopreyzabalo@yahoo.com" [ref=e524] [cursor=pointer]:
+                - /url: mailto:jopreyzabalo@yahoo.com
+              - link "(+1) 942 588 5523" [ref=e525] [cursor=pointer]:
+                - /url: tel:+19425885523
+            - paragraph [ref=e526]: East York, Ontario / Canada
+          - generic [ref=e527]:
+            - generic [ref=e528]:
+              - heading "Book a consultation" [level=3] [ref=e529]
+              - generic [ref=e530]: "* Required"
+            - generic [ref=e531]:
+              - generic [ref=e532]:
+                - generic [ref=e533]: Your name *
+                - textbox "Your name *" [ref=e534]:
+                  - /placeholder: Full name
+              - generic [ref=e535]:
+                - generic [ref=e536]: Email address *
+                - textbox "Email address *" [ref=e537]:
+                  - /placeholder: you@example.com
+              - generic [ref=e538]:
+                - generic [ref=e539]: Tattoo style *
+                - generic [ref=e540]:
+                  - combobox
+                  - combobox "Tattoo style *" [ref=e541] [cursor=pointer]:
+                    - generic [ref=e542]: Select a style
+                    - img [ref=e543]
+              - generic [ref=e545]:
+                - generic [ref=e546]: Placement *
+                - textbox "Placement *" [ref=e547]:
+                  - /placeholder: e.g. Inner forearm
+              - generic [ref=e548]:
+                - generic [ref=e549]: Approximate size / optional
+                - textbox "Approximate size / optional" [ref=e550]:
+                  - /placeholder: e.g. 10 × 15 cm
+              - generic [ref=e551]:
+                - generic [ref=e552]: Budget in CAD / optional
+                - textbox "Budget in CAD / optional" [ref=e553]:
+                  - /placeholder: Your comfortable range
+              - generic [ref=e554]:
+                - generic [ref=e555]: Tell me about your idea *
+                - textbox "Tell me about your idea *" [ref=e556]:
+                  - /placeholder: The story, the subject, the details. A rough idea is a good place to start.
+              - generic [ref=e557]:
+                - generic [ref=e558]: Reference link / optional
+                - textbox "Reference link / optional Or attach your reference images when your email opens." [ref=e559]:
+                  - /placeholder: https://
+                - generic [ref=e560]: Or attach your reference images when your email opens.
+            - generic [ref=e561]:
+              - paragraph [ref=e562]: Opens your email app with your inquiry ready to send. Your appointment is confirmed directly with Joefrey.
+              - button "Continue to email" [ref=e563] [cursor=pointer]:
+                - text: Continue to email
+                - img [ref=e564]
+            - status
+      - contentinfo [ref=e566]:
+        - generic [ref=e567]:
+          - link "Heartless Tattoo home" [ref=e568] [cursor=pointer]:
+            - /url: "#home"
+            - img "Heartless Tattoo" [ref=e569]
+          - paragraph [ref=e570]:
+            - text: East York, Ontario
+            - generic [ref=e571]: Made personal. Worn forever.
+          - generic [ref=e572]:
+            - link "jopreyzabalo@yahoo.com" [ref=e573] [cursor=pointer]:
+              - /url: mailto:jopreyzabalo@yahoo.com
+            - link "(+1) 942 588 5523" [ref=e574] [cursor=pointer]:
+              - /url: tel:+19425885523
+        - generic [ref=e575]:
+          - generic [ref=e576]: © 2026 Heartless Tattoo
+          - link "Book a consultation" [ref=e577] [cursor=pointer]:
+            - /url: "#consultation"
+          - link "Back to top" [ref=e578] [cursor=pointer]:
+            - /url: "#home"
+            - text: Back to top
+            - generic [ref=e579]: ↑
+  - button "Open Next.js Dev Tools" [ref=e585] [cursor=pointer]:
+    - img [ref=e586]
+  - alert [ref=e589]

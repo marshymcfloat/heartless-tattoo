@@ -1,0 +1,175 @@
+.section {
+  margin-inline: var(--page-edge);
+  padding: 30px 0 68px;
+  border-top: 1px solid #383838;
+  scroll-margin-top: 94px;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #a3a3a0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas: "intro artwork" "outro artwork";
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.56fr);
+  column-gap: clamp(36px, 6.5vw, 112px);
+  row-gap: 18px;
+  padding-block: clamp(48px, 6vw, 90px) 64px;
+}
+
+.storyIntro { grid-area: intro; align-self: end; }
+.storyOutro { grid-area: outro; }
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: #a3a3a0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.storyIntro h2 {
+  margin: 0;
+  font-size: clamp(45px, 5.8vw, 88px);
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: -0.075em;
+}
+
+.storyIntro h2 span { color: #92928e; }
+
+.lead,
+.reflection {
+  max-width: 520px;
+  margin-left: clamp(0px, 5vw, 80px);
+  color: #c1c1bd;
+  font-size: clamp(14px, 1.18vw, 17px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.lead { margin-top: clamp(32px, 4vw, 56px); margin-bottom: 0; }
+.reflection { margin-top: 0; margin-bottom: 0; }
+
+.signature {
+  margin: 42px 0 0 clamp(0px, 5vw, 80px);
+  font-size: 14px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.signature span { margin-left: 10px; color: #92928e; font-weight: 500; }
+
+.artwork { grid-area: artwork; align-self: end; width: 100%; max-width: 380px; margin: 0 0 4px auto; }
+
+.imageFrame {
+  aspect-ratio: 0.9;
+  overflow: hidden;
+  background: #000;
+}
+
+.imageFrame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+.artwork figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  color: #a3a3a0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.journey {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(40px, 0.5fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(16px, 4vw, 60px);
+  padding-top: 24px;
+  border-top: 1px solid #383838;
+}
+
+.placeLabel {
+  display: block;
+  margin-bottom: 14px;
+  color: #a3a3a0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.place strong {
+  display: block;
+  font-size: clamp(20px, 2.15vw, 32px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+.place strong span {
+  display: block;
+  margin-top: 6px;
+  color: #92928e;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.currentPlace { text-align: right; }
+
+.path { position: relative; height: 1px; background: #52524f; }
+.path::before,
+.path::after { position: absolute; top: -3px; width: 7px; height: 7px; border-radius: 50%; background: #f5f5f3; content: ""; }
+.path::before { left: 0; }
+.path::after { right: 0; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr) minmax(200px, 0.52fr); gap: 28px; }
+  .storyIntro h2 { font-size: clamp(42px, 5.6vw, 64px); }
+  .lead, .reflection { margin-left: 0; }
+  .signature { margin-left: 0; }
+}
+
+@media (max-width: 700px) {
+  .section { padding: 28px 0 52px; }
+  .topline span:last-child { display: none; }
+  .layout { grid-template-areas: "intro" "artwork" "outro"; grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 28px 36px; }
+  .eyebrow { display: none; }
+  .storyIntro h2 { font-size: clamp(36px, 9.2vw, 54px); font-weight: 550; line-height: 1.02; letter-spacing: -0.065em; }
+  .lead, .reflection { max-width: 520px; font-size: 16px; line-height: 1.6; }
+  .lead { margin-top: 24px; }
+  .signature { margin-top: 24px; line-height: 1.4; }
+  .signature span { display: block; margin: 4px 0 0; }
+  .artwork { max-width: none; margin: 0; }
+  .imageFrame { aspect-ratio: 4 / 5; }
+  .imageFrame img { object-position: center 30%; }
+  .artwork figcaption { display: none; }
+  .journey { grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 0; }
+  .place { padding-block: 20px; }
+  .currentPlace { border-top: 1px solid #383838; text-align: left; }
+  .placeLabel { margin-bottom: 8px; }
+  .place strong { font-size: clamp(22px, 6vw, 28px); font-weight: 550; }
+  .path { display: none; }
+}

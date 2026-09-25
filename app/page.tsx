@@ -1,69 +1,155 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
+import About from "./about";
+import Booking from "./booking";
+import Footer from "./footer";
+import Navbar from "./navbar";
+import { contact } from "./contact-info";
+import SelectedWork from "./selected-work";
+import styles from "./page.module.css";
+
+const tattooWork = [
+  { src: "/tattoo-images/services-marquee/gallery-1.jpg", width: 1170, height: 1560, title: "Gallery 01", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-2.jpg", width: 1170, height: 1560, title: "Gallery 02", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-3.jpg", width: 1170, height: 1559, title: "Gallery 03", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-4.jpg", width: 1170, height: 1560, title: "Gallery 04", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-5.jpg", width: 1209, height: 1611, title: "Gallery 05", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-6.jpg", width: 1170, height: 1560, title: "Gallery 06", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-7.jpg", width: 1170, height: 1560, title: "Gallery 07", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-8.jpg", width: 1170, height: 1560, title: "Gallery 08", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-9.jpg", width: 1170, height: 1560, title: "Gallery 09", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-10.jpg", width: 1170, height: 1463, title: "Gallery 10", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-11.jpg", width: 1170, height: 1170, title: "Gallery 11", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-12.jpg", width: 820, height: 1073, title: "Gallery 12", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-13.jpg", width: 1170, height: 1560, title: "Gallery 13", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-14.jpg", width: 1170, height: 1560, title: "Gallery 14", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-15.jpg", width: 1170, height: 1170, title: "Gallery 15", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-16.jpg", width: 1170, height: 1170, title: "Gallery 16", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-17.jpg", width: 1170, height: 1170, title: "Gallery 17", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-18.jpg", width: 1170, height: 1170, title: "Gallery 18", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-19.jpg", width: 1170, height: 1170, title: "Gallery 19", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+  { src: "/tattoo-images/services-marquee/gallery-20.jpg", width: 1170, height: 1560, title: "Gallery 20", alt: "Tattoo artwork from the Heartless Tattoo gallery" },
+];
+
+function Arrow({ diagonal = false }: { diagonal?: boolean }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={styles.arrow}
+      viewBox="0 0 18 18"
+      fill="none"
+    >
+      <path d={diagonal ? "M4 14 14 4M6 4h8v8" : "M3 9h12M10 4l5 5-5 5"} />
+    </svg>
+  );
+}
+
+function Marquee() {
+  const text = "HEARTLESS TATTOO — ";
+
+  return (
+    <div className={styles.marquee} aria-label="Heartless Tattoo">
+      <div className={styles.marqueeTrack} aria-hidden="true">
+        <span>{text}</span>
+        <span>{text}</span>
+      </div>
+    </div>
+  );
+}
+
+function WorkMarquee() {
+  return (
+    <span className={styles.workViewport} aria-hidden="true">
+      <span className={styles.workTrack}>
+        {[0, 1].map((group) => (
+          <span className={styles.workGroup} key={group}>
+            {tattooWork.slice(0, 6).map((image) => (
+              <Image
+                className={styles.workPhoto}
+                src={image.src}
+                alt=""
+                width={image.width}
+                height={image.height}
+                sizes="(max-width: 700px) 96px, 116px"
+                key={image.src}
+              />
+            ))}
+          </span>
+        ))}
+      </span>
+    </span>
+  );
+}
 
 export default function Home() {
+  const { props: desktopHero } = getImageProps({
+    src: "/tattoo-images/hero-models-reference-v3.png",
+    alt: "Tattoo portrait showcasing blackwork arm artwork",
+    width: 1536,
+    height: 1024,
+    sizes: "(max-width: 1100px) 96vw, 1040px",
+    loading: "eager",
+    fetchPriority: "high",
+  });
+  const { props: mobileHero } = getImageProps({
+    src: "/tattoo-images/hero-mobile.png",
+    alt: desktopHero.alt,
+    width: 1024,
+    height: 1536,
+    sizes: "100vw",
+  });
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className={styles.hero} id="home">
+      <Navbar />
+
+      <section className={styles.heroContent} aria-labelledby="hero-title">
+        <h1 id="hero-title" className={styles.srOnly}>
+          Heartless Tattoo
+        </h1>
+
+        <div className={styles.socials}>
+          <a href="#instagram">Instagram</a>
+          <a href={contact.phoneHref}>{contact.phone}</a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <p className={styles.statement}>
+          Every line I create carries a piece of who I am. Tattooing is not what
+          I do for a living—it&apos;s what I live for.
+        </p>
+
+        <Marquee />
+
+        <picture>
+          <source
+            media="(max-width: 700px)"
+            srcSet={mobileHero.srcSet}
+            sizes={mobileHero.sizes}
+            width={1024}
+            height={1536}
+          />
+          {/* getImageProps supplies Next.js-optimized responsive sources. */}
+          <img {...desktopHero} alt={desktopHero.alt} className={styles.heroModels} />
+        </picture>
+
+        <p className={styles.location}>Based in East York, Ontario</p>
+
+        <a className={styles.workCard} href="#work" aria-label="See selected work">
+          <span className={styles.workCardLabel}>
+            <span>See work</span>
+            <span className={styles.workCardMeta}>
+              {String(tattooWork.length).padStart(2, "0")}
+              <Arrow diagonal />
+            </span>
+          </span>
+          <WorkMarquee />
+        </a>
+      </section>
+      <div className={styles.contentPanel}>
+        <SelectedWork works={tattooWork} />
+        <About />
+        <Booking />
+        <Footer />
+      </div>
+    </main>
   );
 }
