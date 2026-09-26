@@ -14,7 +14,7 @@ export default function Booking() {
     const value = (name: string) => String(data.get(name) ?? "").trim();
     const subject = `Tattoo inquiry — ${value("name")}`;
     const body = [
-      "Hi Joefrey,",
+      "Hi Joeffrey,",
       "I'd like to discuss a tattoo idea.",
       "",
       `Name: ${value("name")}`,
@@ -88,7 +88,7 @@ export default function Booking() {
             </label>
           </div>
           <div className={styles.submitRow}>
-            <p id="booking-note"><span className={styles.desktopNote}>Opens your email app with your inquiry ready to send. Your appointment is confirmed directly with Joefrey.</span><span className={styles.mobileNote}>Opens your email app. Send the draft to complete your request.</span></p>
+          <p id="booking-note"><span className={styles.desktopNote}>Opens your email app with your inquiry ready to send. Your appointment is confirmed directly with Joeffrey.</span><span className={styles.mobileNote}>Opens your email app. Send the draft to complete your request.</span></p>
             <button type="submit" aria-describedby="booking-note">
               Continue to email
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" strokeWidth="1.5" /></svg>
@@ -104,7 +104,7 @@ export default function Booking() {
           <span>Prefer to reach out directly?</span>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
           <a href={contact.phoneHref}>{contact.phone}</a>
-          <p className={styles.location}>East York, Ontario / Canada</p>
+          <p className={styles.location}>Toronto</p>
         </div>
       </div>
     </section>

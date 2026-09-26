@@ -131,7 +131,7 @@ export default function Home() {
           <img {...desktopHero} alt={desktopHero.alt} className={styles.heroModels} />
         </picture>
 
-        <p className={styles.location}>Based in East York, Ontario</p>
+        <p className={styles.location}>Based in Toronto</p>
 
         <a className={styles.workCard} href="#work" aria-label="See selected work">
           <span className={styles.workCardLabel}>

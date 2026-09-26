@@ -6,7 +6,7 @@ export default function About() {
     <section className={styles.section} id="about" aria-labelledby="about-title">
       <div className={styles.topline}>
         <span>03 / The artist</span>
-        <span>Heartless Tattoo — Joefrey Zabalo</span>
+        <span>Heartless Tattoo — Joeffrey Zabalo</span>
       </div>
 
       <div className={styles.layout}>
@@ -17,9 +17,9 @@ export default function About() {
             <span>carries a story.</span>
           </h2>
           <p className={styles.lead}>
-            Joefrey Zabalo is a tattoo artist from Puerto Princesa City,
-            Palawan, Philippines. Today, he lives with his wife in East York,
-            Ontario, where she works.
+            Joeffrey Zabalo is a tattoo artist from Puerto Princesa City,
+            Palawan, Philippines. Today, he lives with his wife in Toronto,
+            where she works.
           </p>
         </div>
 
@@ -27,13 +27,13 @@ export default function About() {
           <div className={styles.imageFrame}>
             <Image
               src="/tattoo-images/joefrey-zabalo-street-original.png"
-              alt="Black-and-white portrait of tattoo artist Joefrey Zabalo"
+              alt="Black-and-white portrait of tattoo artist Joeffrey Zabalo"
               width={570}
               height={860}
               sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1100px) 30vw, 380px"
             />
           </div>
-          <figcaption><span>Joefrey Zabalo</span><span>The artist</span></figcaption>
+          <figcaption><span>Joeffrey Zabalo</span><span>The artist</span></figcaption>
         </figure>
 
         <div className={styles.storyOutro}>
@@ -42,11 +42,11 @@ export default function About() {
             with listening, then becomes something considered and personal —
             made to mean more with time, not less.
           </p>
-          <p className={styles.signature}>Joefrey Zabalo <span>/ Tattoo artist</span></p>
+          <p className={styles.signature}>Joeffrey Zabalo <span>/ Tattoo artist</span></p>
         </div>
       </div>
 
-      <div className={styles.journey} aria-label="From Puerto Princesa City, Palawan, to East York, Ontario">
+      <div className={styles.journey} aria-label="From Puerto Princesa City, Palawan, to Toronto">
         <div className={styles.place}>
           <span className={styles.placeLabel}>Where it began / PH</span>
           <strong>Puerto Princesa City<span>Palawan, Philippines</span></strong>
@@ -54,7 +54,7 @@ export default function About() {
         <div className={styles.path} aria-hidden="true"><span /></div>
         <div className={`${styles.place} ${styles.currentPlace}`}>
           <span className={styles.placeLabel}>Where he is now / CA</span>
-          <strong>East York<span>Ontario, Canada</span></strong>
+          <strong>Toronto</strong>
         </div>
       </div>
     </section>

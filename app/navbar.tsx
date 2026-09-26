@@ -192,7 +192,7 @@ export default function Navbar() {
           <p>Explore Heartless Tattoo</p>
         {links.map((link, index) => <a key={link.id} href={`#${link.id}`} onClick={closeMenu} aria-current={active === link.id ? "location" : undefined}><span className={styles.number}>0{index + 1}</span>{link.label}<svg className={styles.mobileArrow} viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 15.5 15.5 4.5M6 4.5h9.5V14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg></a>)}
         </div>
-        <div ref={sheetFooterRef} className={styles.mobileSheetFooter}><div className={styles.mobileNote}>East York, Ontario / Canada</div></div>
+        <div ref={sheetFooterRef} className={styles.mobileSheetFooter}><div className={styles.mobileNote}>Toronto</div></div>
       </nav>, document.body)}
     </header>
   );

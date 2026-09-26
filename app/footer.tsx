@@ -9,7 +9,7 @@ export default function Footer() {
         <a className={styles.brand} href="#home" aria-label="Heartless Tattoo home">
           <Image src="/brand/heartless-tattoo-wordmark.png" alt="Heartless Tattoo" width={1200} height={346} sizes="(max-width: 600px) 280px, 240px" />
         </a>
-        <p className={styles.location}>East York, Ontario<span>Made personal. Worn forever.</span></p>
+        <p className={styles.location}>Toronto<span>Made personal. Worn forever.</span></p>
         <div className={styles.contact}>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
           <a href={contact.phoneHref}>{contact.phone}</a>
